@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>CSS positions</title>
+    <style>
+      .container {
+        background-color: lightblue;
+        padding: 20px;
+        padding: 20px;
+        height: 120vh;
+        position: relative;
+      }
+
+      .container > div {
+        padding: 15px;
+      }
+
+      .container span {
+        margin-bottom: 20px;
+      }
+
+      .first {
+        background-color: lightgreen;
+      }
+
+      .second {
+        background-color: lightcoral;
+      }
+
+      .second--relative {
+        background-color: lightcoral;
+        position: relative;
+        left: 20px;
+      }
+
+      .second--fixed {
+        background-color: lightcoral;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+      }
+
+      .second--absolute {
+        background-color: lightcoral;
+        position: absolute;
+        left: 20px;
+        top: 0;
+      }
+
+      .second--sticky {
+        background-color: lightcoral;
+        position: sticky;
+        top: 0;
+      }
+
+      .third {
+        background-color: lightgoldenrodyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Static</h1>
+
+    <div class="container">
+      <span>Container</span>
+      <div class="first">First</div>
+      <div class="second">Second</div>
+      <div class="third">Third</div>
+    </div>
+
+    <h1>Relative</h1>
+
+    <div class="container">
+      <span>Container</span>
+      <div class="first">First</div>
+      <div class="second second--relative">Second</div>
+      <div class="third">Third</div>
+    </div>
+
+    <h1>Fixed</h1>
+
+    <div class="container">
+      <span>Container</span>
+      <div class="first">First</div>
+      <div class="second second--fixed">Second I am fixed</div>
+      <div class="third">Third</div>
+    </div>
+
+    <h1>Absolute</h1>
+
+    <div class="container">
+      <span>Container</span>
+      <div class="first">First</div>
+      <div class="second second--absolute">Second</div>
+      <div class="third">Third</div>
+    </div>
+
+    <!-- <h1>Sticky</h1>
+
+    <div class="container">
+      <span>Container</span>
+      <div class="first">First</div>
+      <div class="second second--absolute">Second</div>
+      <div class="third">Third</div>
+    </div> -->
+  </body>
+</html>
